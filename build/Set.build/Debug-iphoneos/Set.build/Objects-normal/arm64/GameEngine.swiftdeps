@@ -208,6 +208,7 @@ depends-member:
 - ["3Set10GameEngineV", "isCurrentlySelected"]
 - !private ["3Set10GameEngineV", "print"]
 - ["3Set10GameEngineV", "selectCard"]
+- ["3Set10GameEngineV", "startGame"]
 - ["3Set10GameEngineV", "theWholeSetOfCards"]
 - !private ["SH", "Int"]
 - !private ["SH", "UInt32"]
@@ -437,4 +438,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5fe7dffbe67c7ca77cc558edda0a48c9"
+interface-hash: "3f2c2aeaca5d3acdde7c872c881bdda3"

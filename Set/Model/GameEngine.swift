@@ -11,8 +11,6 @@ import Foundation
 struct GameEngine {
     
     private(set) var theWholeSetOfCards: [Card] = []
-    private(set) var isCurrentlyOnScreen: [Card] = []
-    private(set) var isCurrentlySelected: [Card] = []
     
     init() {
         for color in 0...2 {
@@ -24,30 +22,16 @@ struct GameEngine {
                 }
             }
         }
+    }
+    
+    mutating func startGame() -> [Card] {
+        var startingSetOfCards: [Card] = []
         for _ in 0..<12 {
-            isCurrentlyOnScreen.append(theWholeSetOfCards.remove(at: theWholeSetOfCards.count.randomInteger))
+            startingSetOfCards.append(theWholeSetOfCards.remove(at: theWholeSetOfCards.count.randomInteger))
         }
+        return startingSetOfCards
     }
     
-    mutating func selectCard(card: Card) {
-        print("did select card")
-        isCurrentlySelected.append(card)
-        if isCurrentlySelected.count == 3 {
-            let isSet = doesTheseCardsFormASet(card1: isCurrentlySelected[0], card2: isCurrentlySelected[1], card3: card)
-            if isSet {
-                for cards in 0..<3 {
-                    isCurrentlyOnScreen.remove(at: isCurrentlyOnScreen.firstIndex(of: isCurrentlySelected[cards])!)
-                }
-                print("is set")
-                isCurrentlySelected = []
-            }
-        }
-    }
-    
-    mutating func didDraw(card: Card, index: Int) {
-        isCurrentlyOnScreen[isCurrentlyOnScreen.firstIndex(of: card)!].isDrawn = true
-        isCurrentlyOnScreen[isCurrentlyOnScreen.firstIndex(of: card)!].associatedButtonIndex = index
-    }
     
     func dealThreeMoreCards(){
         
