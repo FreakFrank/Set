@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "b94d7250ed1e85b2492b6f3ee415c5ee"
+build_time: [1547481431, 845319000]
+inputs:
+  "/Users/kareemismail/XCodeProjects/Set/Set/Controller/ViewController.swift": [1547310690, 0]
+  "/Users/kareemismail/XCodeProjects/Set/Set/Model/Card.swift": [1547317764, 0]
+  "/Users/kareemismail/XCodeProjects/Set/Set/AppDelegate.swift": [1547310690, 0]
+  "/Users/kareemismail/XCodeProjects/Set/Set/Model/GameEngine.swift": [1547317730, 0]
