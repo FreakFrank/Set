@@ -92,6 +92,7 @@ class SetVC: UIViewController {
         isCurrentlyOnScreen = gameEngine.startGame()
         cardsRemainingInDeck = 69
         updateScreen()
+        updateScore()
     }
     
     func getTheCardAssociatedWithTheSelectedButton(buttonIndex: Int) -> Card {
