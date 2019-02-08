@@ -55,7 +55,7 @@ struct Card: Equatable {
 enum Color: String, CaseIterable {
     case black
     case green
-    case blue
+    case yellow
 }
 
 enum Shape: String, CaseIterable {
@@ -66,7 +66,7 @@ enum Shape: String, CaseIterable {
 
 enum Shading: Int, CaseIterable {
     case filled = 100
-    case striped = 25
+    case striped = 40
     case outlined = 5
 }
 
@@ -82,8 +82,8 @@ extension Color {
             switch self {
             case .black:
                 return UIColor.black
-            case .blue:
-                return UIColor.blue
+            case .yellow:
+                return UIColor.yellow
             case .green:
                 return UIColor.green
             }

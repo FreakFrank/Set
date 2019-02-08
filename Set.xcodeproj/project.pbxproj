@@ -14,6 +14,7 @@
 		2F0F527B21EA4DE50096FA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F527921EA4DE50096FA3A /* LaunchScreen.storyboard */; };
 		2F0F528321EA50500096FA3A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F528221EA50500096FA3A /* Card.swift */; };
 		2F0F528521EA5F460096FA3A /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F528421EA5F460096FA3A /* GameEngine.swift */; };
+		2F2CE7D8220A10E100EC3006 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CE7D7220A10E100EC3006 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2F0F527C21EA4DE50096FA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F0F528221EA50500096FA3A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2F0F528421EA5F460096FA3A /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		2F2CE7D7220A10E100EC3006 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2F0F527221EA4DE20096FA3A /* SetVC.swift */,
+				2F2CE7D7220A10E100EC3006 /* Extensions.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2CE7D8220A10E100EC3006 /* Extensions.swift in Sources */,
 				2F0F527321EA4DE20096FA3A /* SetVC.swift in Sources */,
 				2F0F528321EA50500096FA3A /* Card.swift in Sources */,
 				2F0F527121EA4DE20096FA3A /* AppDelegate.swift in Sources */,

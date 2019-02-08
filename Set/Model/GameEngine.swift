@@ -11,6 +11,7 @@ import Foundation
 struct GameEngine {
     
     private(set) var theWholeSetOfCards: [Card] = []
+    private(set) var score = 0
     
     init() {
         for color in 0...2 {
@@ -33,19 +34,24 @@ struct GameEngine {
     }
     
     
-    func dealThreeMoreCards(){
-        
+    mutating func dealThreeMoreCards() -> ([Card], Int){
+        var threeMoreCards: [Card] = []
+        for _ in 0..<3 {
+            threeMoreCards.append(theWholeSetOfCards.remove(at: theWholeSetOfCards.count.randomInteger))
+        }
+        return (threeMoreCards, theWholeSetOfCards.count)
     }
     
-    func doesTheseCardsFormASet(card1: Card, card2: Card, card3: Card) -> Bool {
+    mutating func doesTheseCardsFormASet(card1: Card, card2: Card, card3: Card) -> Bool {
         for property in 0...3 {
             if !((card1[property] == card2[property]) && (card1[property] == card3[property]) && (card2[property] == card3[property]) || (card1[property] != card2[property]) && (card1[property] != card3[property]) && (card2[property] != card3[property])) {
+                score -= 2
                 return false
             }
         }
+        score += 3
         return true
     }
-    
 }
 
 extension Int {

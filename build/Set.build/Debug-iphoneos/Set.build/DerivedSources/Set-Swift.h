@@ -196,13 +196,14 @@ SWIFT_CLASS("_TtC3Set11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 @class UIButton;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC3Set5SetVC")
 @interface SetVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified dealThreeMoreCardsButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified scoreLabel;
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified setCards;
 - (void)viewDidLoad;
@@ -212,6 +213,8 @@ SWIFT_CLASS("_TtC3Set5SetVC")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
